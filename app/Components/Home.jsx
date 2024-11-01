@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import HeroImage from "../../assets/Right-image.png";
 import Image from "next/image";
 import img from "../../assets/Untitled-1.png";
-import news from "../../assets/news.png";
+import news from "../../assets/News.png";
 // import mockup from '../../assets/Untitled-1.png '
 
 const Home = () => {
