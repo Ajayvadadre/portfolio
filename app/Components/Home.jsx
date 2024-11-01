@@ -85,9 +85,9 @@ const Home = () => {
                 "photoshop",
                 "figma",
               ].map((icon, index) => (
-                <div className="   h-12 w-12 overflow-hidden">
+                <div  key={index}  className="h-12 w-12 overflow-hidden">
                   <img
-                    key={index}
+                   
                     className="h-full w-full object-fit"
                     src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${icon}/${icon}-original.svg`}
                   />
