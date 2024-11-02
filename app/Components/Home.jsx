@@ -21,7 +21,7 @@ const Home = () => {
       />
 
       <Navbar />
-      <div className="hero-main h-128  w-full pr-24 mobile:pr-0 flex gap-50 md:pl-28 px-20 mobile:flex-wrap  lg:flex-nowrap md:flex-nowrap mobile:pl-0 sm:gap-20 md:gap-30 lg:gap-40 lg:px-20">
+      <div className="hero-main h-128  w-full pr-24 mobile:pr-0 flex gap-50 md:pl-28 px-20 mobile:flex-wrap  lg:flex-nowrap md:flex-nowrap mobile:pl-0 sm:gap-20 md:gap-30 lg:gap-0 lg:px-20">
         <div className="hero-left w-2/4 flex flex-col gap-10 text-start mobile:w-full mobile:px-10 mobile:mt-10 justify-center ">
           <div className="div">
             <h5>&#x3c;Hello World&#x3e;</h5>
@@ -44,7 +44,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="skills mt-44  flex  justify-between px-20">
+      <div className="skills mt-52 flex  justify-between px-20">
         <div className="skills-left-container text-left w-1/2 flex flex-col gap-5 px-10">
           <div className="div mb-6">
             <h5>&#x3c;Skills&#x3e;</h5>
@@ -85,9 +85,8 @@ const Home = () => {
                 "photoshop",
                 "figma",
               ].map((icon, index) => (
-                <div  key={index}  className="h-12 w-12 overflow-hidden">
+                <div key={index} className="h-12 w-12 overflow-hidden">
                   <img
-                   
                     className="h-full w-full object-fit"
                     src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${icon}/${icon}-original.svg`}
                   />
@@ -98,8 +97,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="Projects px-20 mt-52 mb-32 flex gap-12">
-        <div className="projects-left border-red-500 ">
+      <div className="Project1 px-20 mt-60 mb-32 flex gap-12">
+        <div className="projects-left border-red-500 w-2/4 ">
           <div className="skills-left-container text-left  flex flex-col  gap-7 px-10">
             <div className="div mb-6">
               <h5>&#x3c;Projects&#x3e;</h5>
@@ -122,26 +121,17 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="project-right ">
+        <div className="project-right w-2/4 ">
           <Image
             src={img}
-            className=" mix-blend-screen object-contain rounded-sm mobile:w-full mobile:h-3/5 sm:w-full sm:h-1/2  lg:h-full"
+            className=" mix-blend-screen  object-contain rounded-sm mobile:w-full mobile:h-3/5 sm:w-full sm:h-1/2  lg:h-full"
           />
         </div>
       </div>
 
-      <div className="Project2 px-20 mt-52 mb-32 flex gap-12">
-        <div className="project-right ">
-          <Image
-            src={news}
-            className=" mix-blend-screen object-contain mobile:w-full mobile:h-3/5 sm:w-full sm:h-1/2 rounded-sm lg:h-full"
-          />
-        </div>
-        <div className="projects-left border-red-500 ">
+      <div className="Project2 px-20  mt-60 mb-32 flex gap-12 ">
+        <div className="projects-left border-red-500 w-2/4 ">
           <div className="skills-left-container text-left  flex flex-col  gap-7 px-10">
-            <div className="div mb-6">
-              <h5>&#x3c;Projects&#x3e;</h5>
-            </div>
             <div className="">
               <h1 className="text-left w-full mobile:text-3xl lg:text-2xl xl:text-3xl md:text-xl ">
                 NewsTime- <br />
@@ -156,11 +146,61 @@ const Home = () => {
               real-time news, no matter their language preference. The platform
               is designed to be sleek, modern, and easy to navigate, ensuring
               users can quickly find news articles and updates tailored to their
-              region or language..
+              region or language.
             </div>
           </div>
         </div>
+        <div className="project-right w-2/4 ">
+          <Image
+            src={news}
+            className=" mix-blend-screen  object-contain rounded-sm mobile:w-full mobile:h-3/5 sm:w-full sm:h-1/2  lg:h-full"
+          />
+        </div>
       </div>
+
+      <div className="Work-experience1 px-20  mt-60 mb-32  ">
+          <div className="div text-start px-20 ">
+            <h5>&#x3c;Work Experience&#x3e;</h5>
+          </div>
+        
+        <div className="exp-container px-20  mt-10 mb-32 flex gap-10 ">
+          <div className="Exp-1 text-left  flex flex-col  gap-7  border w-2/3 px-10 py-16 ">
+            <div className="">
+              <h1 className="text-left w-full mobile:text-3xl lg:text-2xl xl:text-3xl md:text-xl ">
+                Connectix- Web developer
+              </h1>
+              2 Months
+            </div>
+            <div className=" text-start">
+              <ul className="list-disc pl-5">
+                <li>Website development</li>
+                <li>Database development</li>
+                <li>Python program development </li>
+                <li>Website parsing</li>
+              </ul>
+            </div>
+          </div>
+          
+            <div className="Exp-2 text-left  flex flex-col  gap-7 px-10 py-16 border   w-4/5  p-20">
+              <div className="">
+                <h1 className="text-left w-full mobile:text-3xl lg:text-2xl xl:text-3xl md:text-xl  ">
+                  Alumak- Wordpress developer
+                </h1>
+                6 Months
+              </div>
+              <div className=" text-start">
+                <ul className="list-disc pl-5">
+                  <li>Website development</li>
+                  <li>Database development</li>
+                  <li>Python program development </li>
+                  <li>Website parsing</li>
+                </ul>
+              </div>
+            </div>
+
+        </div>
+      </div>
+      <div className="Work-experience2 px-20   mb-32 flex gap-12 "></div>
     </div>
   );
 };
