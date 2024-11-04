@@ -204,7 +204,7 @@ const Home = () => {
             <div className=" text-start ">
               <ul className="list-disc pl-5 ">
                 <li>
-                  Managed and maintained the company's WordPress site, improving
+                  Managed and maintained the company&apos;s WordPress site, improving
                   UI/UX.
                 </li>
                 <li>

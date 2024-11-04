@@ -49,7 +49,8 @@ const Footer = () => {
               className="cursor-pointer"
               height={20}
               src={icons}
-              keys={icons}
+              key={icons}
+    
             ></Image>
           );
         })}
