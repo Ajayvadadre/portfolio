@@ -4,11 +4,12 @@ import HeroImage from "../../assets/Right-image.png";
 import Image from "next/image";
 import img from "../../assets/Untitled-1.png";
 import news from "../../assets/News.png";
+import Footer from "./Footer";
 // import mockup from '../../assets/Untitled-1.png '
 
 const Home = () => {
   return (
-    <div>
+    <div className="scroll-smooth">
       <link
         rel="stylesheet"
         type="text/css"
@@ -21,42 +22,50 @@ const Home = () => {
       />
 
       <Navbar />
-      <div className="hero-main h-128  w-full pr-24 mobile:pr-0 flex gap-50 md:pl-28 px-20 mobile:flex-wrap  lg:flex-nowrap md:flex-nowrap mobile:pl-0 sm:gap-20 md:gap-30 lg:gap-0 lg:px-20">
-        <div className="hero-left w-2/4 flex flex-col gap-10 text-start mobile:w-full mobile:px-10 mobile:mt-10 justify-center ">
-          <div className="div">
+      <div
+        className="hero-main h-128  w-full pr-24 max-mobile:pr-0 flex gap-50 md:pl-28 px-20 max-mobile:flex-wrap-reverse
+        lg:flex-nowrap md:flex-nowrap max-mobile:mt-10 max-mobile:pl-0 sm:gap-20 md:gap-30 lg:gap-0 "
+      >
+        <div className="hero-left w-2/4 flex flex-col gap-10 text-start max-mobile:w-full max-mobile:px-10 max-mobile:gap-3 justify-center ">
+          <div className="div text-neutral-400">
             <h5>&#x3c;Hello World&#x3e;</h5>
           </div>
           <div className="">
-            <h1 className="text-left w-full mobile:text-3xl lg:text-2xl xl:text-3xl md:text-xl">
+            <h1 className="text-left w-full mobile:ml-1 mobile:text-sm lg:text-2xl xl:text-3xl md:text-xl">
               My name is ajay vadadre. <br />I am a web developer from India
             </h1>
           </div>
           <div>
-            <button className="div text-white hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600  dark:hover:text-white dark:hover:bg-gray-900 dark:focus:ring-gray-900">
+            <button className="button mobile:py-2  mobile:ml-1  text-white hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600  dark:hover:text-white dark:hover:bg-gray-900 dark:focus:ring-gray-900">
               Contact me
             </button>
           </div>
         </div>
-        <div className="hero-right h-full flex align-middle mobile:w-full ">
+        <div className="hero-right h-full flex align-middle max-mobile:w-full max-mobile:pt-20   border-red-800  max-mobile:mt-10 ">
           <Image
             src={HeroImage}
-            className="mt-28 mix-blend-screen object-contain mobile:w-full mobile:h-3/5 sm:w-full sm:h-1/2  lg:h-3/4"
+            className="mt-28 mix-blend-screen object-contain  mobile: max-mobile:mt-0  max-mobile:w-full max-mobile:mr-32 sm:w-full sm:h-1/2  lg:h-3/4"
           />
         </div>
       </div>
-      <div className="skills mt-52 flex  justify-between px-20">
-        <div className="skills-left-container text-left w-1/2 flex flex-col gap-5 px-10">
+{/* 
+      <div className="scroll-down-btn flex justify-center mobile:mt-10 lg:-mt-20 mobile:hidden lg:block">
+        <div class="scroll-down"></div>
+      </div> */}
+
+      <div className="skills mt-52 flex max-mobile:mt-28 max-mobile:px-0 max-mobile:flex-wrap justify-between px-20 ">
+        <div  className="skills-left-container text-left w-1/2 max-mobile:w-full flex flex-col gap-5 px-10">
           <div className="div mb-6">
             <h5>&#x3c;Skills&#x3e;</h5>
           </div>
           <div className="">
-            <h1 className="text-left w-full mobile:text-3xl lg:text-2xl xl:text-3xl md:text-xl ">
-              Skills I know as a <br />
+            <h1 className="text-left w-full max-mobile:text-l lg:text-2xl xl:text-3xl md:text-xl ">
+              Skills I know as a <br/>
               web developer
             </h1>
           </div>
-          <div className=" text-start">
-            <ul className="list-disc pl-5">
+          <div className=" text-start ">
+            <ul className="list-disc pl-5 max-mobile:text-sm">
               <li>Website development</li>
               <li>Database development</li>
               <li>Python program development </li>
@@ -65,9 +74,9 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="skills-right-container w-1/2  h-full mb-14 ">
-          <div className="skills-right-container w-full  h-full mb-14">
-            <div className="skills-imgs grid grid-cols-5 gap-y-10  ">
+        <div className="skills-right-container w-1/2 max-mobile:w-full max-mobile:px-5 h-full mb-14 ">
+          <div className="skills-right-container w-full  h-full mb-14 ">
+            <div className="skills-imgs grid grid-cols-5 gap-y-10 mt-20 max-mobile:place-items-center max-mobile:mt-10  ">
               {[
                 "html5",
                 "css3",
@@ -85,7 +94,7 @@ const Home = () => {
                 "photoshop",
                 "figma",
               ].map((icon, index) => (
-                <div key={index} className="h-12 w-12 overflow-hidden">
+                <div key={index} className="h-12 w-12 max-mobile:h-8 max-mobile:w-8 overflow-hidden ">
                   <img
                     className="h-full w-full object-fit"
                     src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${icon}/${icon}-original.svg`}
@@ -121,7 +130,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="project-right w-2/4 ">
+        <div className="project-right w-2/4 mt-20 ">
           <Image
             src={img}
             className=" mix-blend-screen  object-contain rounded-sm mobile:w-full mobile:h-3/5 sm:w-full sm:h-1/2  lg:h-full"
@@ -158,11 +167,11 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="Work-experience1 px-20  mt-60 mb-32  ">
-          <div className="div text-start px-20 ">
-            <h5>&#x3c;Work Experience&#x3e;</h5>
-          </div>
-        
+      <div className="Work-experience1 px-10  mt-60 mb-32  ">
+        <div className="div text-start px-20 ">
+          <h5>&#x3c;Work Experience&#x3e;</h5>
+        </div>
+
         <div className="exp-container px-20  mt-10 mb-32 flex gap-10 ">
           <div className="Exp-1 text-left  flex flex-col  gap-7  border w-2/3 px-10 py-16 ">
             <div className="">
@@ -172,35 +181,45 @@ const Home = () => {
               2 Months
             </div>
             <div className=" text-start">
-              <ul className="list-disc pl-5">
-                <li>Website development</li>
-                <li>Database development</li>
-                <li>Python program development </li>
-                <li>Website parsing</li>
+              <ul className="list-disc pl-5 leading-7 ">
+                <li className="leading-6">
+                  Redesigned the UI for a Next.js project, enhancing usability.
+                </li>
+                <li>Fixed critical bugs to improve functionality.</li>
+                <li>Optimized performance and user experience. </li>
+                <li>Added email verification for secure signups.</li>
+                <li>Focused on user-centric improvements throughout.</li>
+              </ul>
+            </div>
+            <div className="div"></div>
+          </div>
+
+          <div className="Exp-2 text-left  flex flex-col  gap-7 px-10 py-16 border  w-2/3 p-20">
+            <div className="">
+              <h1 className="text-left w-full mobile:text-3xl lg:text-2xl xl:text-3xl md:text-xl  ">
+                Alumak- Wordpress developer
+              </h1>
+              <h1>6 Months</h1>
+            </div>
+            <div className=" text-start ">
+              <ul className="list-disc pl-5 ">
+                <li>
+                  Managed and maintained the company's WordPress site, improving
+                  UI/UX.
+                </li>
+                <li>
+                  Boosted performance by removing plugins and optimizing images.
+                </li>
+                <li>Added SEO-optimized blog posts to increase visibility.</li>
+                <li>Implemented a custom mouse cursor for a unique UI. </li>
+                <li>Migrated the website to new hosting with zero downtime </li>
               </ul>
             </div>
           </div>
-          
-            <div className="Exp-2 text-left  flex flex-col  gap-7 px-10 py-16 border   w-4/5  p-20">
-              <div className="">
-                <h1 className="text-left w-full mobile:text-3xl lg:text-2xl xl:text-3xl md:text-xl  ">
-                  Alumak- Wordpress developer
-                </h1>
-                6 Months
-              </div>
-              <div className=" text-start">
-                <ul className="list-disc pl-5">
-                  <li>Website development</li>
-                  <li>Database development</li>
-                  <li>Python program development </li>
-                  <li>Website parsing</li>
-                </ul>
-              </div>
-            </div>
-
         </div>
       </div>
       <div className="Work-experience2 px-20   mb-32 flex gap-12 "></div>
+      <div className="footer fixed  bottom-0 w-full">{/* <Footer /> */}</div>
     </div>
   );
 };
