@@ -15,7 +15,7 @@ module.exports = {
         '128': '87vh',
       },
       screens: {
-        'mobile': '425px',
+        'mobile': '428px',
         // => @media (min-width: 375px) { ... }
         'tablet': '640px',
         // => @media (min-width: 640px) { ... }

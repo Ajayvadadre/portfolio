@@ -10,6 +10,7 @@ import Footer from "./Footer";
 const Home = () => {
   return (
     <div className="scroll-smooth">
+      
       <link
         rel="stylesheet"
         type="text/css"
@@ -24,12 +25,14 @@ const Home = () => {
       <Navbar />
       <div
         className="hero-main h-128  w-full pr-24 max-mobile:pr-0 flex gap-50 md:pl-28 px-20 max-mobile:flex-wrap-reverse
-        lg:flex-nowrap md:flex-nowrap max-mobile:mt-10 max-mobile:pl-0 sm:gap-20 md:gap-30 lg:gap-0 "
+        lg:flex-nowrap md:flex-nowrap max-mobile:h-2/4 max-mobile:mt-14 max-mobile:pl-0 sm:gap-20 md:gap-30 lg:gap-0 "
       >
-        <div className="hero-left w-2/4 flex flex-col gap-10 text-start max-mobile:w-full max-mobile:px-10 max-mobile:gap-3 justify-center ">
-          <div className="div text-neutral-400">
+        
+        <div className="hero-left w-2/4 flex flex-col gap-10 text-start max-mobile:mt-12 max-mobile:w-full max-mobile:px-10 max-mobile:gap-3  justify-center ">
+          <div className="div text-neutral-400 max-mobile:-ml-2 ">
             <h5>&#x3c;Hello World&#x3e;</h5>
           </div>
+
           <div className="">
             <h1 className="text-left w-full mobile:ml-1 mobile:text-sm lg:text-2xl xl:text-3xl md:text-xl">
               My name is ajay vadadre. <br />I am a web developer from India
@@ -41,26 +44,26 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="hero-right h-full flex align-middle max-mobile:w-full max-mobile:pt-20   border-red-800  max-mobile:mt-10 ">
+        <div className="hero-right h-full flex align-middle max-mobile:w-full max-mobile:pt-0  max-mobile:h-2/4   max-mobile:mt-0  ">
           <Image
             src={HeroImage}
             className="mt-28 mix-blend-screen object-contain  mobile: max-mobile:mt-0  max-mobile:w-full max-mobile:mr-32 sm:w-full sm:h-1/2  lg:h-3/4"
           />
         </div>
       </div>
-{/* 
+      {/* 
       <div className="scroll-down-btn flex justify-center mobile:mt-10 lg:-mt-20 mobile:hidden lg:block">
         <div class="scroll-down"></div>
       </div> */}
 
-      <div className="skills mt-52 flex max-mobile:mt-28 max-mobile:px-0 max-mobile:flex-wrap justify-between px-20 ">
-        <div  className="skills-left-container text-left w-1/2 max-mobile:w-full flex flex-col gap-5 px-10">
-          <div className="div mb-6">
+      <div className="skills mt-52 flex max-mobile:mt-30 max-mobile:px-0 max-mobile:flex-wrap justify-between px-20 ">
+        <div className="skills-left-container text-left w-1/2 max-mobile:w-full flex flex-col gap-5 px-10">
+          <div className="div mb-6 text-neutral-400 max-mobile:mb-0  max-mobile:-ml-2">
             <h5>&#x3c;Skills&#x3e;</h5>
           </div>
           <div className="">
             <h1 className="text-left w-full max-mobile:text-l lg:text-2xl xl:text-3xl md:text-xl ">
-              Skills I know as a <br/>
+              Skills I know as a <br />
               web developer
             </h1>
           </div>
@@ -94,7 +97,10 @@ const Home = () => {
                 "photoshop",
                 "figma",
               ].map((icon, index) => (
-                <div key={index} className="h-12 w-12 max-mobile:h-8 max-mobile:w-8 overflow-hidden ">
+                <div
+                  key={index}
+                  className="h-12 w-12 max-mobile:h-8 max-mobile:w-8 overflow-hidden "
+                >
                   <img
                     className="h-full w-full object-fit"
                     src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${icon}/${icon}-original.svg`}
@@ -106,10 +112,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="Project1 px-20 mt-60 mb-32 flex gap-12">
-        <div className="projects-left border-red-500 w-2/4 ">
-          <div className="skills-left-container text-left  flex flex-col  gap-7 px-10">
-            <div className="div mb-6">
+      <div className="Project1 px-20 mt-60 mb-32 max-mobile:px-1 max-mobile:flex-wrap  flex  gap-12">
+        <div className="projects-left  w-2/4 max-mobile:w-full ">
+          <div className="skills-left-container text-left  flex flex-col  gap-7 px-10 max-mobile:px-4 ">
+            <div className="div mb-6 text-neutral-400  max-mobile:-ml-2">
               <h5>&#x3c;Projects&#x3e;</h5>
             </div>
             <div className="">
@@ -118,7 +124,7 @@ const Home = () => {
                 E-commerce website
               </h1>
             </div>
-            <div className=" text-start ">
+            <div className="  max-mobile:text-sm  ">
               Shoes Dekh is a modern, youth-centric e-commerce platform built on
               the MERN stack (MongoDB, Express, React, Node.js). The project is
               designed with aesthetics in mind, focusing on providing a sleek
@@ -130,16 +136,16 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="project-right w-2/4 mt-20 ">
+        <div className="project-right w-2/4 mt-20 max-mobile:w-full ">
           <Image
             src={img}
-            className=" mix-blend-screen  object-contain rounded-sm mobile:w-full mobile:h-3/5 sm:w-full sm:h-1/2  lg:h-full"
+            className=" mix-blend-screen  object-contain rounded-sm max-mobile:w-full mobile:h-3/5 sm:w-full sm:h-1/2  lg:h-full"
           />
         </div>
       </div>
 
-      <div className="Project2 px-20  mt-60 mb-32 flex gap-12 ">
-        <div className="projects-left border-red-500 w-2/4 ">
+      <div className="Project2 px-20  mt-60 max-mobile:px-1 max-mobile:flex-wrap mb-32 flex gap-12 ">
+        <div className="projects-left border-red-500 max-mobile:w-full w-2/4 ">
           <div className="skills-left-container text-left  flex flex-col  gap-7 px-10">
             <div className="">
               <h1 className="text-left w-full mobile:text-3xl lg:text-2xl xl:text-3xl md:text-xl ">
@@ -159,21 +165,21 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="project-right w-2/4 ">
+        <div className="project-right w-2/4  max-mobile:w-full">
           <Image
             src={news}
-            className=" mix-blend-screen  object-contain rounded-sm mobile:w-full mobile:h-3/5 sm:w-full sm:h-1/2  lg:h-full"
+            className=" mix-blend-screen  object-contain rounded-sm max-mobile:w-full mobile:h-3/5 sm:w-full sm:h-1/2  lg:h-full"
           />
         </div>
       </div>
 
-      <div className="Work-experience1 px-10  mt-60 mb-32  ">
-        <div className="div text-start px-20 ">
+      <div className="Work-experience1 px-10  mt-60 mb-32 max-mobile:flex-wrap  max-mobile:px-10 ">
+        <div className="div text-start px-20 max-mobile:px-1 text-neutral-400 max-mobile:-ml-2">
           <h5>&#x3c;Work Experience&#x3e;</h5>
         </div>
 
-        <div className="exp-container px-20  mt-10 mb-32 flex gap-10 ">
-          <div className="Exp-1 text-left  flex flex-col  gap-7  border w-2/3 px-10 py-16 ">
+        <div className="exp-container px-20  mt-10 mb-32 flex gap-10 max-mobile:flex-wrap max-mobile:px-0">
+          <div className="Exp-1 text-left  flex flex-col  gap-7  border w-2/3 px-10 py-16 max-mobile:w-full max-mobile:py-5 max-mobile:px-5">
             <div className="">
               <h1 className="text-left w-full mobile:text-3xl lg:text-2xl xl:text-3xl md:text-xl ">
                 Connectix- Web developer
@@ -194,7 +200,7 @@ const Home = () => {
             <div className="div"></div>
           </div>
 
-          <div className="Exp-2 text-left  flex flex-col  gap-7 px-10 py-16 border  w-2/3 p-20">
+          <div className="Exp-2 text-left  flex flex-col  gap-7  border w-2/3 px-10 py-16 max-mobile:w-full max-mobile:py-5 max-mobile:px-5">
             <div className="">
               <h1 className="text-left w-full mobile:text-3xl lg:text-2xl xl:text-3xl md:text-xl  ">
                 Alumak- Wordpress developer
@@ -204,8 +210,8 @@ const Home = () => {
             <div className=" text-start ">
               <ul className="list-disc pl-5 ">
                 <li>
-                  Managed and maintained the company&apos;s WordPress site, improving
-                  UI/UX.
+                  Managed and maintained the company&apos;s WordPress site,
+                  improving UI/UX.
                 </li>
                 <li>
                   Boosted performance by removing plugins and optimizing images.
@@ -223,5 +229,4 @@ const Home = () => {
     </div>
   );
 };
-
 export default Home;
