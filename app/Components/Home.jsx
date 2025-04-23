@@ -10,7 +10,6 @@ import Footer from "./Footer";
 const Home = () => {
   return (
     <div className="scroll-smooth">
-      
       <link
         rel="stylesheet"
         type="text/css"
@@ -27,7 +26,6 @@ const Home = () => {
         className="hero-main h-128  w-full pr-24 max-mobile:pr-0 flex gap-50 md:pl-28 px-20 max-mobile:flex-wrap-reverse
         lg:flex-nowrap md:flex-nowrap max-mobile:h-2/4 max-mobile:mt-14 max-mobile:pl-0 sm:gap-20 md:gap-30 lg:gap-0 "
       >
-        
         <div className="hero-left w-2/4 flex flex-col gap-10 text-start max-mobile:mt-12 max-mobile:w-full max-mobile:px-10 max-mobile:gap-3  justify-center ">
           <div className="div text-neutral-400 max-mobile:-ml-2 ">
             <h5>&#x3c;Hello World&#x3e;</h5>
@@ -103,7 +101,11 @@ const Home = () => {
                   className="h-12 w-12 max-mobile:h-8 max-mobile:w-8 overflow-hidden "
                 >
                   <img
-                    className="h-full w-full object-fit"
+                    className={`${
+                      icon == "vercel" || icon == "github"
+                        ? "bg-slate-100 p-2 rounded-full overflow-visible"
+                        : "h-full w-full object-fit "
+                    }`}
                     src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${icon}/${icon}-original.svg`}
                   />
                 </div>
