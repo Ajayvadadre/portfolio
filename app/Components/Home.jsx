@@ -77,6 +77,7 @@ const Home = () => {
           </div>
         </div>
 
+        {/*-------- Skills --------- */}
         <div className="skills-right-container w-1/2 max-mobile:w-full max-mobile:px-5 h-full mb-14 ">
           <div className="skills-right-container w-full  h-full mb-14 ">
             <div className="skills-imgs grid grid-cols-5 gap-y-10 mt-20 max-mobile:place-items-center max-mobile:mt-10  ">
@@ -112,6 +113,7 @@ const Home = () => {
         </div>
       </div>
 
+      {/*-------- Projects --------- */}
       <div className="Project1 px-20 mt-60 mb-32 max-mobile:px-1 max-mobile:flex-wrap  flex  gap-12">
         <div className="projects-left  w-2/4 max-mobile:w-full ">
           <div className="skills-left-container text-left  flex flex-col  gap-7 px-10 max-mobile:px-4 ">
@@ -173,18 +175,21 @@ const Home = () => {
         </div>
       </div>
 
+      {/*-------- Work experience --------- */}
       <div className="Work-experience1 px-10  mt-60 mb-32 max-mobile:flex-wrap  max-mobile:px-10 ">
         <div className="div text-start px-20 max-mobile:px-1 text-neutral-400 max-mobile:-ml-2">
-          <h5>&#x3c;Work Experience&#x3e;</h5>
+          <h5>&#x3c;
+            
+             Experience&#x3e;</h5>
         </div>
 
-        <div className="exp-container px-20  mt-10 mb-32 flex gap-10 max-mobile:flex-wrap max-mobile:px-0">
-          <div className="Exp-1 text-left  flex flex-col  gap-7  border w-2/3 px-10 py-16 max-mobile:w-full max-mobile:py-5 max-mobile:px-5">
+        <div className="exp-container grid px-20  mt-10 mb-32 flex gap-10 max-mobile:flex-wrap max-mobile:px-0">
+          <div className="Exp-1 text-left  flex flex-col  gap-7 border border-gray-400  w-2/3 px-10 py-16 max-mobile:w-full max-mobile:py-5 max-mobile:px-5">
             <div className="">
               <h1 className="text-left w-full mobile:text-3xl lg:text-2xl xl:text-3xl md:text-xl ">
-                Connectix- Web developer
+                SlashRTC- Software developer
               </h1>
-              2 Months
+              Current
             </div>
             <div className=" text-start">
               <ul className="list-disc pl-5 leading-7 ">
@@ -200,7 +205,7 @@ const Home = () => {
             <div className="div"></div>
           </div>
 
-          <div className="Exp-2 text-left  flex flex-col  gap-7  border w-2/3 px-10 py-16 max-mobile:w-full max-mobile:py-5 max-mobile:px-5">
+          <div className="Exp-2 text-left  flex flex-col  gap-7 border border-gray-400 w-2/3 px-10 py-16 max-mobile:w-full max-mobile:py-5 max-mobile:px-5">
             <div className="">
               <h1 className="text-left w-full mobile:text-3xl lg:text-2xl xl:text-3xl md:text-xl  ">
                 Alumak- Wordpress developer
@@ -221,6 +226,27 @@ const Home = () => {
                 <li>Migrated the website to new hosting with zero downtime </li>
               </ul>
             </div>
+          </div>
+
+          <div className="Exp-1 text-left  flex flex-col  gap-7 border border-gray-400 w-2/3 px-10 py-16 max-mobile:w-full max-mobile:py-5 max-mobile:px-5">
+            <div className="">
+              <h1 className="text-left w-full mobile:text-3xl lg:text-2xl xl:text-3xl md:text-xl ">
+                Connectix- Web developer
+              </h1>
+              2 Months
+            </div>
+            <div className=" text-start">
+              <ul className="list-disc pl-5 leading-7 ">
+                <li className="leading-6">
+                  Redesigned the UI for a Next.js project, enhancing usability.
+                </li>
+                <li>Fixed critical bugs to improve functionality.</li>
+                <li>Optimized performance and user experience. </li>
+                <li>Added email verification for secure signups.</li>
+                <li>Focused on user-centric improvements throughout.</li>
+              </ul>
+            </div>
+            <div className="div"></div>
           </div>
         </div>
       </div>
