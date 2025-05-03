@@ -11,7 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
-  const array = [
+  const socialLinks = [
     { icon: twitterIcon, url: "https://x.com/AjayVadadre" },
     { icon: githubIcon, url: "https://github.com/Ajayvadadre" },
     { icon: InstaIcon, url: "https://www.instagram.com/ajay_vadadre/" },
@@ -20,39 +20,42 @@ const Footer = () => {
   const [mouseHover, setMouseHover] = useState(false);
 
   return (
-    <footer id="contact">
-      <div
-        className="flex justify-between w-full px-10 py-3 text-zinc-300  
-        backdrop-blur-sm shadow-lg bg-opacity-20"
-      >
-        <div className="left-sec flex gap-2">
-          {/* <Link href="mailto:ajvadadre1234@gmail.com"> */}
-          <div
-            onMouseEnter={() => setMouseHover(true)}
-            onMouseLeave={() => setMouseHover(false)}
-            className="flex items-center gap-2 "
-          >
-            <Image
-              height={18}
-              width={18} // Add width to prevent layout shift
-              src={mouseHover ? emailOpen : email}
-              alt="Email icon"
-            />
-            <h1 className="font-mono">ajvadadre1234@gmail.com</h1>
-          </div>
-          {/* </Link> */}
-        </div>
+    <footer id="contact" className="w-full">
+      <div className="flex flex-col sm:flex-row justify-between items-center w-full px-4 sm:px-10 py-3 text-zinc-300 backdrop-blur-sm shadow-lg bg-opacity-20 gap-4 sm:gap-0">
+        {/* Email Section */}
+        <a 
+          href="mailto:ajvadadre1234@gmail.com"
+          className="flex items-center gap-2 hover:text-white transition-colors"
+          onMouseEnter={() => setMouseHover(true)}
+          onMouseLeave={() => setMouseHover(false)}
+        >
+          <Image
+            height={18}
+            width={18}
+            src={mouseHover ? emailOpen : email}
+            alt="Email icon"
+            className="flex-shrink-0"
+          />
+          <span className="font-mono text-sm sm:text-base truncate max-w-[180px] sm:max-w-none">
+            ajvadadre1234@gmail.com
+          </span>
+        </a>
 
-        <div className="connections flex gap-5 ">
-          {array.map((social) => (
-            <Link href={social.url} target="_blank">
+        {/* Social Links */}
+        <div className="flex gap-4 sm:gap-5">
+          {socialLinks.map((social, index) => (
+            <Link 
+              href={social.url} 
+              target="_blank"
+              rel="noopener noreferrer"
+              key={index}
+            >
               <Image
                 className="cursor-pointer transition-transform duration-300 hover:scale-110 hover:-translate-y-1"
                 height={20}
-                width={20} // Add width to prevent layout shift
+                width={20}
                 src={social.icon}
-                key={social.icon}
-                alt="Social icon"
+                alt={`${social.url.split('.')[1]} icon`}
               />
             </Link>
           ))}

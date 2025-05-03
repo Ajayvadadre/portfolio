@@ -43,7 +43,7 @@ const Home = () => {
             </div>
             <div>
               <Link href={"#contact"}>
-                <button className="button mobile:py-2  mobile:ml-1  text-white hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600  dark:hover:text-white dark:hover:bg-gray-900 dark:focus:ring-gray-900">
+                <button className="button mobile:py-2  mobile:ml-1  text-white hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600  dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-900">
                   Contact me
                 </button>
               </Link>
@@ -59,18 +59,18 @@ const Home = () => {
       </section>
 
       {/*-------- Skills --------- */}
-      <section id="skills" className="py-24 border-b border-gray-800">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section id="skills" className="py-28 border-b border-gray-800">
+        <div className="mx-auto max-w-7xl px-6 lg:px-1">
           {/* Centered Heading */}
-          <div className="text-center mb-16">
-            <p className="text-blue-400 font-mono mb-2">&lt;Skills/&gt;</p>
+          <div className="text-center pb-10">
+            <p className="text-neutral-400 font-mono mb-2">&lt;Skills/&gt;</p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Tech worked with
             </h2>
           </div>
 
           {/* Content Container */}
-          <div className="flex flex-col md:flex-row gap-12 text-start">
+          <div className="flex flex-col md:flex-row gap-12 mt-24 text-start">
             {/* Left Column - Text */}
             <div className="md:w-1/2">
               <ul className="space-y-4 text-gray-400">
@@ -121,7 +121,7 @@ const Home = () => {
                     <div
                       className={`p-2 rounded-full ${
                         icon === "vercel" || icon === "github"
-                          ? "bg-white"
+                          ? "bg-slate-200 p-2 rounded-full"
                           : ""
                       }`}
                     >
@@ -140,16 +140,16 @@ const Home = () => {
       </section>
 
       {/*-------- Projects --------- */}
-      <section id="projects" className="pb-24 sm:py- border-b border-gray-800">
-        <div className="mx-auto max-w-7xl mt-40 px-6 lg:px-8">
-          <div className="text-center">
-            <p className="text-blue-400 font-mono mb-4">&lt;Projects/&gt;</p>
+      <section id="projects" className="py-28 sm:py- border-b border-gray-800">
+        <div className="mx-auto max-w-7xl  px-6 lg:px-1">
+          <div className="text-center pb-16">
+            <p className="text-neutral-400 font-mono mb-4">&lt;Projects/&gt;</p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Featured Work
             </h2>
           </div>
 
-          <div className="mt-16 space-y-20">
+          <div className=" space-y-20">
             {/* Project 1 */}
             <div className="flex flex-col  md:flex-row gap-24 text-start items-center">
               <div className="lg:w-2/5 md:w-1/2">
@@ -175,7 +175,7 @@ const Home = () => {
             </div>
 
             {/* Project 2 */}
-            <div className="flex flex-col  md:flex-row-reverse text-start gap-20 items-center">
+            <div className="flex flex-col pt-14 md:flex-row-reverse text-start gap-20 items-center">
               <div className=" md:w-1/2">
                 <h3 className="text-2xl font-bold">NewsTime</h3>
                 <p className="mt-4 text-gray-400">
@@ -202,10 +202,10 @@ const Home = () => {
       </section>
 
       {/*-------- Work experience --------- */}
-      <section id="work">
-        <div className="Work-experience1 px-10  mt-40    mb-32 max-mobile:flex-wrap  max-mobile:px-10 ">
-          <div className="text-center">
-            <p className="text-blue-400 font-mono mb-4">&lt;Experience/&gt;</p>
+      <section id="work" className="pt-28">
+        <div className="Work-experience1 px-10 mb-32 max-mobile:flex-wrap  max-mobile:px-10 ">
+          <div className="text-center pb-10">
+            <p className="text-neutral-400 font-mono mb-4">&lt;Experience/&gt;</p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Work experience
             </h2>
