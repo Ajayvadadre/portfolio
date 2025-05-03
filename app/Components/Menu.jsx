@@ -37,6 +37,13 @@ const Menu = () => {
       <DropdownMenuContent className="bg-gray-900 border-gray-700 rounded-md">
         <DropdownMenuItem
           className="cursor-pointer text-white hover:bg-gray-700 focus:bg-gray-700 focus:outline-none"
+          onClick={(e) => handleMenuItemClick(e, "experience")}
+        >
+          Experience
+        </DropdownMenuItem>
+        <div className="h-px bg-gray-600" />
+        <DropdownMenuItem
+          className="cursor-pointer text-white hover:bg-gray-700 focus:bg-gray-700 focus:outline-none"
           onClick={(e) => handleMenuItemClick(e, "projects")}
         >
           Projects

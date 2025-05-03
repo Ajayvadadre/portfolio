@@ -59,7 +59,7 @@ const Home = () => {
       </section>
 
       {/*-------- Skills --------- */}
-      <section id="skills" className="py-28 border-b border-gray-800">
+      <section id="skills" className="py-32 border-b border-gray-800">
         <div className="mx-auto max-w-7xl px-6 lg:px-1">
           {/* Centered Heading */}
           <div className="text-center pb-10">
@@ -202,10 +202,12 @@ const Home = () => {
       </section>
 
       {/*-------- Work experience --------- */}
-      <section id="work" className="pt-28">
+      <section id="experience" className="pt-28">
         <div className="Work-experience1 px-10 mb-32 max-mobile:flex-wrap  max-mobile:px-10 ">
           <div className="text-center pb-10">
-            <p className="text-neutral-400 font-mono mb-4">&lt;Experience/&gt;</p>
+            <p className="text-neutral-400 font-mono mb-4">
+              &lt;Experience/&gt;
+            </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Work experience
             </h2>
@@ -226,12 +228,34 @@ const Home = () => {
               <div className="text-start">
                 <ul className="list-disc pl-5 space-y-2 font-sans">
                   <li>
-                    Redesigned the UI for a Next.js project, enhancing usability
+                    <strong>Client Issue Resolution:</strong> Rapidly diagnose
+                    and fix critical bugs in the call center dialer platform to
+                    minimize downtime for clients
                   </li>
-                  <li>Fixed critical bugs to improve functionality</li>
-                  <li>Optimized performance and user experience</li>
-                  <li>Added email verification for secure signups</li>
-                  <li>Focused on user-centric improvements throughout</li>
+                  <li>
+                    <strong>Feature Development:</strong> Design and implement
+                    new calling features based on client requirements and
+                    business needs
+                  </li>
+                  <li>
+                    <strong>Technical Planning:</strong> Estimate development
+                    timelines and create technical specifications for new
+                    features
+                  </li>
+                  <li>
+                    <strong>Frontend Debugging:</strong> Investigate and resolve
+                    UI/UX issues in the calling interface to ensure seamless
+                    call operations
+                  </li>
+                  <li>
+                    <strong>Legacy Migration:</strong> Modernize older features
+                    by migrating them to current frameworks and best practices
+                  </li>
+                  <li>
+                    <strong>Performance Optimization:</strong> Enhance call
+                    connection reliability and reduce latency in the calling
+                    interface
+                  </li>
                 </ul>
               </div>
             </div>
@@ -249,7 +273,7 @@ const Home = () => {
               </div>
               <div className="text-start">
                 <ul className="list-disc pl-5 space-y-2 font-sans">
-                  <li>Managed and maintained the company's WordPress site</li>
+                  <li>Managed and maintained the company WordPress site</li>
                   <li>Boosted performance by optimizing plugins and images</li>
                   <li>Added SEO-optimized blog posts to increase visibility</li>
                   <li>Implemented custom UI elements</li>
