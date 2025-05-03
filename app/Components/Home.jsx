@@ -157,10 +157,15 @@ const Home = () => {
                   offering a sleek shopping experience for footwear enthusiasts.
                 </p>
                 <div className="mt-6">
-                  <button className="flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
-                    View project
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
+                  <Link
+                    href={"https://github.com/Ajayvadadre/Shoesdekh"}
+                    target="_blank"
+                  >
+                    <button className="flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                      View project
+                      <ArrowRight className="w-4 h-4" />
+                    </button>
+                  </Link>
                 </div>
               </div>
               <div className="w-full md:w-1/2 mt-8 md:mt-0">
@@ -181,13 +186,18 @@ const Home = () => {
                   worldwide, built with React and Node.js.
                 </p>
                 <div className="mt-6">
-                  <button className="flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
-                    view project
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
+                  <Link
+                    href={"https://github.com/Ajayvadadre/News-app"}
+                    target="_blank"
+                  >
+                    <button className="flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                      view project
+                      <ArrowRight className="w-4 h-4" />
+                    </button>
+                  </Link>
                 </div>
               </div>
-              <div className="md:w-1/2">
+              <div className="md:w-1/2 mt-7">
                 <Image
                   src={news}
                   alt="NewsTime multilingual news website"
