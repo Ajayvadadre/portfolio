@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between px-10 py-5 mr-8 ">
+    <div className="flex justify-between px-10 py-5  ">
       <Link href={"/"}>
         <Image src={logo} className="h-7 w-7 cursor-pointer " alt=""></Image>
       </Link>

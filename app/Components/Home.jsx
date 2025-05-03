@@ -59,21 +59,19 @@ const Home = () => {
       </section>
 
       {/*-------- Skills --------- */}
-      <section id="skills" className="py-32 border-b border-gray-800">
+      <section id="skills" className="py-16 md:py-32 border-b border-gray-800">
         <div className="mx-auto max-w-7xl px-6 lg:px-1">
-          {/* Centered Heading */}
-          <div className="text-center pb-10">
+          <div className="text-center pb-6 md:pb-10">
             <p className="text-neutral-400 font-mono mb-2">&lt;Skills/&gt;</p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Tech worked with
             </h2>
           </div>
 
-          {/* Content Container */}
-          <div className="flex flex-col md:flex-row gap-12 mt-24 text-start">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 mt-10 md:mt-10 text-start">
             {/* Left Column - Text */}
             <div className="md:w-1/2">
-              <ul className="space-y-4 text-gray-400">
+              <ul className="space-y-3 md:space-y-4 text-gray-400">
                 <li>
                   <strong className="text-white">Frontend:</strong> React,
                   Next.js, Tailwind CSS
@@ -98,8 +96,8 @@ const Home = () => {
             </div>
 
             {/* Right Column - Icons */}
-            <div className="md:w-1/2">
-              <div className="grid grid-cols-5 gap-6">
+            <div className="md:w-1/2 mt-6 md:mt-0">
+              <div className="grid grid-cols-5 gap-4 md:gap-6">
                 {[
                   "html5",
                   "css3",
@@ -119,16 +117,16 @@ const Home = () => {
                 ].map((icon, index) => (
                   <div key={index} className="flex justify-center">
                     <div
-                      className={`p-2 rounded-full ${
+                      className={`p-1 md:p-2 rounded-full ${
                         icon === "vercel" || icon === "github"
-                          ? "bg-slate-200 p-2 rounded-full"
+                          ? "bg-slate-200"
                           : ""
                       }`}
                     >
                       <img
                         src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${icon}/${icon}-original.svg`}
                         alt={icon}
-                        className="h-10 w-10 object-contain"
+                        className="h-8 w-8 md:h-10 md:w-10 object-contain"
                       />
                     </div>
                   </div>
@@ -140,7 +138,7 @@ const Home = () => {
       </section>
 
       {/*-------- Projects --------- */}
-      <section id="projects" className="py-28 sm:py- border-b border-gray-800">
+      <section id="projects" className="py-32 sm:py- border-b border-gray-800">
         <div className="mx-auto max-w-7xl  px-6 lg:px-1">
           <div className="text-center pb-16">
             <p className="text-neutral-400 font-mono mb-4">&lt;Projects/&gt;</p>
@@ -151,8 +149,8 @@ const Home = () => {
 
           <div className=" space-y-20">
             {/* Project 1 */}
-            <div className="flex flex-col  md:flex-row gap-24 text-start items-center">
-              <div className="lg:w-2/5 md:w-1/2">
+            <div className="flex flex-col md:flex-row lg:gap-24 text-start items-center">
+              <div className="w-full md:w-1/2 lg:w-2/5">
                 <h3 className="text-2xl font-bold">ShoesDekh</h3>
                 <p className="mt-4 text-gray-400">
                   A modern e-commerce platform built with Next.js and MongoDB,
@@ -165,7 +163,7 @@ const Home = () => {
                   </button>
                 </div>
               </div>
-              <div className="md:w-1/2">
+              <div className="w-full md:w-1/2 mt-8 md:mt-0">
                 <Image
                   src={img}
                   alt="ShoesDekh e-commerce website"
@@ -175,7 +173,7 @@ const Home = () => {
             </div>
 
             {/* Project 2 */}
-            <div className="flex flex-col pt-14 md:flex-row-reverse text-start gap-20 items-center">
+            <div className="flex flex-col pt-14 md:flex-row-reverse text-start sm:gap lg:gap-24 items-center">
               <div className=" md:w-1/2">
                 <h3 className="text-2xl font-bold">NewsTime</h3>
                 <p className="mt-4 text-gray-400">
