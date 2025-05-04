@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import menu from "../../assets/menu-line.png";
 import Link from "next/link";
-
+import Home from "./Home";
 import {
   DropdownMenu,
   DropdownMenuContent,
